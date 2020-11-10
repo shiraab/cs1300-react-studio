@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background-color: #25215A;
+  padding-left: 10vw;
+
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  max-width: 80vw;
+  padding: 2vw;
+  align-items: center;
+  align-content: center;
+  background-color: #F8F4F4;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.listitem {
+  width: 200px;
+  height: 200px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  margin-top: 8px;
+}
+
+.listitem p {
+  background-color: #F8F4F4;
+  width: 50%;
+  align-self: center;
+  text-align: right;
+  margin-left: 2px;
+}
+
+button {
+  padding: 8px;
+  background-color: #F8F4F4;
+  margin-left: auto;
+  border-radius: 4px;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+}
+
+.liked {
+  margin-right: 0px;
+  margin-top: 24px;
+}
+
+.border {
+  border: 4px solid rgba(240, 255, 0, 1);
+}
+
+.border > .liked {
+  text-align: left;
+  margin-right: 0px;
 }
